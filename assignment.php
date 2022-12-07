@@ -10,7 +10,8 @@
 </head>
 <body class="bg-dark">
     <div class="container-fluid">
-    <div class="col-6 offset-3 ">
+    <div class="row">
+    <div class="col-6">
     <h1 class="mb-3 text-white text-center">IN REGULAR ORDER</h1>
     <?php
         
@@ -29,7 +30,7 @@
     
     
     </div>
-    <div class="col-6 offset-3 ">
+    <div class="col-6">
     <h1 class="mb-3 text-white text-center">IN REVERSE ORDER</h1>
     <?php
         
@@ -45,6 +46,7 @@
          }?>
     
     
+    </div>
     </div>
     </div> 
     

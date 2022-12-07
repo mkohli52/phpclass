@@ -8,7 +8,7 @@
     <link href="https://getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
 </head>
-<body>
+<body class="bg-darkr">
 <?php
         $items =json_decode(file_get_contents('https://dummyjson.com/products'));
         // echo '<pre>';
@@ -19,12 +19,12 @@
             <?php 
                 for($i=0;$i<count($items->products);$i++){
             ?>
-            <div class="card mb-2 me-2" style="width: 18rem;">
+            <div class="card mb-2 me-2 p-2 align-self-end" style="width: 18rem;">
                 <img src="<?php echo $items->products[$i]->images[0]; ?>" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $items->products[$i]->title; ?></h5>
                         <p class="card-text"><?php echo $items->products[$i]->description; ?></p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-primary d-flex justify-content-center">Buy Now!</a>
                     </div>
             </div>
             <?php }?>
